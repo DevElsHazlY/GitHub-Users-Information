@@ -1,4 +1,4 @@
-# المطور: @T6GIO
+# Developer: @T6GIO
 # Telegram: https://t.me/T6GIO
 # GitHub: https://github.com/DevElsHazlY
 
@@ -10,20 +10,20 @@ def get_user_info(username):
 
     if res.status_code == 200:
         data = res.json()
-        print(f"\nمعلومات المستخدم @{username}:\n")
-        print(f"الاسم: {data.get('name')}")
-        print(f"عدد الريبو: {data.get('public_repos')}")
-        print(f"عدد المتابعين: {data.get('followers')}")
-        print(f"يتابع: {data.get('following')}")
-        print(f"الموقع: {data.get('location')}")
-        print(f"النبذة: {data.get('bio')}")
-        print(f"رابط البروفايل: {data.get('html_url')}")
+        print(f"\nUser Info for @{username}:\n")
+        print(f"Name: {data.get('name')}")
+        print(f"Public Repositories: {data.get('public_repos')}")
+        print(f"Followers: {data.get('followers')}")
+        print(f"Following: {data.get('following')}")
+        print(f"Location: {data.get('location')}")
+        print(f"Bio: {data.get('bio')}")
+        print(f"Profile URL: {data.get('html_url')}")
     else:
-        print("❌ لم يتم العثور على المستخدم أو هناك مشكلة بالاتصال.")
+        print("❌ User not found or there was a connection issue.")
 
 if __name__ == "__main__":
-    username = input("اكتب اسم المستخدم على GitHub: ").strip()
+    username = input("Enter GitHub username: ").strip()
     if username:
         get_user_info(username)
     else:
-        print("❗ يجب إدخال اسم مستخدم.")
+        print("❗ You must enter a username.")
