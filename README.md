@@ -22,5 +22,8 @@
 pkg update && pkg install python -y
 pip install requests
 pkg install git
-git clone https://github.com/DevElsHazlY/GitHub-Users-Information.git/GHUI.py
+git clone https://github.com/DevElsHazlY/GitHub-Users-Information.git/
+ls
+cd GitHub-Users-Information
+python GHUI.py
 ```
