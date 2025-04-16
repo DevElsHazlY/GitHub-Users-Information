@@ -21,11 +21,13 @@
 ```bash
 pkg update && pkg install python -y
 pip install requests
+pkg install git
+git clone https://github.com/DevElsHazlY/GitHub-Users-Information.git/GHUI.py
 
 
 ---
 
-طريقة الاستخدام:
+## طريقة الاستخدام:
 
 1. افتح Termux
 
