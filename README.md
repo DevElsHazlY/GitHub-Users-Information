@@ -19,11 +19,13 @@
 ### تثبيت المتطلبات على Termux:
 
 ```bash
-pkg update && pkg install python -y
+pkg update -y && pkg upgrade -y
+pkg install python -y
+pkg install git -y
 pip install requests
-pkg install git
-https://github.com/DevElsHazlY/GitHub-Users-Information.git
-ls
+git clone https://github.com/DevElsHazlY/GitHub-Users-Information.git
+
 cd GitHub-Users-Information
+
 python GHUI.py
 ```
